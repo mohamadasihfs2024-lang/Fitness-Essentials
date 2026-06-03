@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Essentials T.Nagar | Premium Gym & Fitness Center Chennai</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Fitness Essentials T.Nagar – Chennai's most premium gym at 7/40 Ramakrishna Street. Certified trainers, modern equipment, personalized programs. 4.9★ rated. Join today!" />
+  <meta name="keywords" content="gym T.Nagar, fitness center Chennai, weight loss, muscle building, personal trainer, HIIT, CrossFit, Fitness Essentials" />
+  <meta name="author" content="Mohammed Asif" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fitnessessentials.in" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fitness Essentials T.Nagar | Premium Gym Chennai" />
+  <meta property="og:description" content="Transform your body. Transform your life. Chennai's most premium fitness experience. 4.9★ | 117+ Reviews." />
+  <meta property="og:url" content="https://fitnessessentials.in" />
+  <meta property="og:site_name" content="Fitness Essentials T.Nagar" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fitness Essentials T.Nagar | Premium Gym Chennai" />
+  <meta name="twitter:description" content="Transform your body. Transform your life. Chennai's most premium fitness experience." />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "Fitness Essentials T.Nagar",
+    "description": "Premium gym and fitness center in T.Nagar, Chennai",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7/40 Ramakrishna Street",
+      "addressLocality": "T.Nagar",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
+    },
+    "telephone": "+918608111181",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "117"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ SCROLL PROGRESS BAR ============ -->
+  <div id="scroll-progress"></div>
+
+  <!-- ============ MOUSE FOLLOWER ============ -->
+  <div id="cursor-glow"></div>
+  <div id="cursor-dot"></div>
+
+  <!-- ============================================================
+       LOADING SCREEN
+  ============================================================ -->
+  <div id="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-particles" id="loaderParticles"></div>
+    <div class="loader-content">
+      <div class="loader-logo-wrap">
+        <div class="loader-dumbbell">
+          <div class="db-bar"></div>
+          <div class="db-weight db-left"></div>
+          <div class="db-weight db-right"></div>
+          <div class="db-glow"></div>
+        </div>
+        <div class="loader-brand">
+          <span class="loader-fe">FITNESS</span>
+          <span class="loader-essentials">ESSENTIALS</span>
+          <span class="loader-location">T.NAGAR · CHENNAI</span>
+        </div>
+      </div>
+      <div class="loader-progress-wrap">
+        <div class="loader-progress-bar">
+          <div class="loader-progress-fill" id="loaderFill"></div>
+        </div>
+        <div class="loader-progress-text"><span id="loaderPercent">0</span>%</div>
+      </div>
+      <div class="loader-tagline">FORGING CHAMPIONS SINCE DAY ONE</div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-icon">
+          <div class="logo-db"><div class="ldb-bar"></div><div class="ldb-w ldb-l"></div><div class="ldb-w ldb-r"></div></div>
+        </div>
+        <div class="nav-logo-text">
+          <span class="nl-fitness">FITNESS</span>
+          <span class="nl-essentials">ESSENTIALS</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#programs" class="nav-link">Programs</a></li>
+        <li><a href="#trainers" class="nav-link">Trainers</a></li>
+        <li><a href="#membership" class="nav-link">Membership</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="https://wa.me/918608111181" target="_blank" class="nav-cta">JOIN NOW</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="home" class="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-star">★</span> 4.9 RATED · 117+ REVIEWS · T.NAGAR CHENNAI
+      </div>
+
+      <h1 class="hero-headline">
+        <span class="hero-line hero-line-1">TRANSFORM</span>
+        <span class="hero-line hero-line-2">YOUR <em>BODY</em></span>
+        <span class="hero-line hero-line-3">TRANSFORM</span>
+        <span class="hero-line hero-line-4">YOUR <em>LIFE</em></span>
+      </h1>
+
+      <p class="hero-sub">
+        Train Stronger. &nbsp;Live Better. &nbsp;Become Your Best Version.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#membership" class="btn-primary hero-btn" id="joinNowBtn">
+          <span class="btn-bg"></span>
+          <span class="btn-text"><i class="fas fa-bolt"></i> JOIN NOW</span>
+        </a>
+        <a href="#contact" class="btn-secondary hero-btn">
+          <span class="btn-text"><i class="fas fa-calendar-check"></i> BOOK FREE TRIAL</span>
+        </a>
+        <a href="https://wa.me/918608111181" target="_blank" class="btn-whatsapp hero-btn">
+          <span class="btn-text"><i class="fab fa-whatsapp"></i> WHATSAPP NOW</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hs-item">
+          <span class="hs-num">1000<sup>+</sup></span>
+          <span class="hs-label">Members</span>
+        </div>
+        <div class="hs-divider"></div>
+        <div class="hs-item">
+          <span class="hs-num">20<sup>+</sup></span>
+          <span class="hs-label">Programs</span>
+        </div>
+        <div class="hs-divider"></div>
+        <div class="hs-item">
+          <span class="hs-num">4.9<sup>★</sup></span>
+          <span class="hs-label">Rating</span>
+        </div>
+        <div class="hs-divider"></div>
+        <div class="hs-item">
+          <span class="hs-num">117<sup>+</sup></span>
+          <span class="hs-label">Reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>SCROLL TO EXPLORE</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY CHOOSE US
+  ============================================================ -->
+  <section id="why" class="section why-section">
+    <div class="section-bg-grid"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">WHY CHOOSE US</span>
+        <h2 class="section-title">THE ESSENTIALS<br /><span class="accent-text">DIFFERENCE</span></h2>
+        <p class="section-sub">Everything you need to achieve your fitness goals — under one roof.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card tilt-card" data-aos="fade-up" data-aos-delay="0" data-tilt>
+          <div class="wc-icon-wrap"><i class="fas fa-medal"></i></div>
+          <h3>Certified Trainers</h3>
+          <p>Our expert trainers hold top-tier certifications and design programs tailored to your unique goals.</p>
+          <div class="wc-glow"></div>
+        </div>
+        <div class="why-card tilt-card" data-aos="fade-up" data-aos-delay="80" data-tilt>
+          <div class="wc-icon-wrap"><i class="fas fa-dumbbell"></i></div>
+          <h3>Modern Equipment</h3>
+          <p>State-of-the-art machines and free weights from premium international brands.</p>
+          <div class="wc-glow"></div>
+        </div>
+        <div class="why-card tilt-card" data-aos="fade-up" data-aos-delay="160" data-tilt>
+          <div class="wc-icon-wrap"><i class="fas fa-user-check"></i></div>
+          <h3>Personalized Training</h3>
+          <p>Custom workout plans built around your body type, fitness level, and goals.</p>
+          <div class="wc-glow"></div>
+        </div>
+        <div class="why-card tilt-card" data-aos="fade-up" data-aos-delay="240" data-tilt>
+          <div class="wc-icon-wrap"><i class="fas fa-clock"></i></div>
+          <h3>Flexible Timings</h3>
+          <p>Early morning to late evening slots — we work around your schedule, not ours.</p>
+          <div class="wc-glow"></div>
+        </div>
+        <div class="why-card tilt-card" data-aos="fade-up" data-aos-delay="320" data-tilt>
+          <div class="wc-icon-wrap"><i class="fas fa-star"></i></div>
+          <h3>Premium Environment</h3>
+          <p>Spotless, air-conditioned, energetic atmosphere that keeps you motivated every session.</p>
+          <div class="wc-glow"></div>
+        </div>
+        <div class="why-card tilt-card" data-aos="fade-up" data-aos-delay="400" data-tilt>
+          <div class="wc-icon-wrap"><i class="fas fa-bullseye"></i></div>
+          <h3>Goal-Based Programs</h3>
+          <p>Whether weight loss, mass gain, or functional fitness — we have a structured program for you.</p>
+          <div class="wc-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROGRAMS
+  ============================================================ -->
+  <section id="programs" class="section programs-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">FITNESS PROGRAMS</span>
+        <h2 class="section-title">TRAIN WITH<br /><span class="accent-text">PURPOSE</span></h2>
+        <p class="section-sub">Choose from 20+ specialized programs designed by expert coaches.</p>
+      </div>
+
+      <div class="programs-grid">
+        <div class="program-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="pc-icon"><i class="fas fa-fire"></i></div>
+          <div class="pc-tag">POPULAR</div>
+          <h3>Weight Loss</h3>
+          <p>Scientifically structured fat-burning protocols with cardio and resistance training.</p>
+          <div class="pc-cta"><a href="https://wa.me/918608111181" target="_blank">Enquire <i class="fas fa-arrow-right"></i></a></div>
+          <div class="pc-border"></div>
+        </div>
+        <div class="program-card" data-aos="zoom-in" data-aos-delay="60">
+          <div class="pc-icon"><i class="fas fa-dumbbell"></i></div>
+          <h3>Muscle Building</h3>
+          <p>Progressive overload hypertrophy programs to maximize lean muscle growth.</p>
+          <div class="pc-cta"><a href="https://wa.me/918608111181" target="_blank">Enquire <i class="fas fa-arrow-right"></i></a></div>
+          <div class="pc-border"></div>
+        </div>
+        <div class="program-card" data-aos="zoom-in" data-aos-delay="120">
+          <div class="pc-icon"><i class="fas fa-person-running"></i></div>
+          <div class="pc-tag">TRENDING</div>
+          <h3>Strength Training</h3>
+          <p>Powerlifting foundations and compound movements to build raw strength.</p>
+          <div class="pc-cta"><a href="https://wa.me/918608111181" target="_blank">Enquire <i class="fas fa-arrow-right"></i></a></div>
+          <div class="pc-border"></div>
+        </div>
+        <div class="program-card" data-aos="zoom-in" data-aos-delay="180">
+          <div class="pc-icon"><i class="fas fa-circle-nodes"></i></div>
+          <h3>Functional Fitness</h3>
+          <p>Movement-based training that improves everyday performance and mobility.</p>
+          <div class="pc-cta"><a href="https://wa.me/918608111181" target="_blank">Enquire <i class="fas fa-arrow-right"></i></a></div>
+          <div class="pc-border"></div>
+        </div>
+        <div class="program-card" data-aos="zoom-in" data-aos-delay="240">
+          <div class="pc-icon"><i class="fas fa-bolt"></i></div>
+          <div class="pc-tag">HIGH ENERGY</div>
+          <h3>HIIT Training</h3>
+          <p>High-intensity intervals to torch fat and boost cardiovascular performance.</p>
+          <div class="pc-cta"><a href="https://wa.me/918608111181" target="_blank">Enquire <i class="fas fa-arrow-right"></i></a></div>
+          <div class="pc-border"></div>
+        </div>
+        <div class="program-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="pc-icon"><i class="fas fa-heart-pulse"></i></div>
+          <h3>Cardio Training</h3>
+          <p>Endurance and cardiovascular programs to improve stamina and heart health.</p>
+          <div class="pc-cta"><a href="https://wa.me/918608111181" target="_blank">Enquire <i class="fas fa-arrow-right"></i></a></div>
+          <div class="pc-border"></div>
+        </div>
+        <div class="program-card" data-aos="zoom-in" data-aos-delay="360">
+          <div class="pc-icon"><i class="fas fa-user-ninja"></i></div>
+          <div class="pc-tag">PREMIUM</div>
+          <h3>Personal Training</h3>
+          <p>One-on-one sessions with a dedicated coach for accelerated, personalized results.</p>
+          <div class="pc-cta"><a href="https://wa.me/918608111181" target="_blank">Enquire <i class="fas fa-arrow-right"></i></a></div>
+          <div class="pc-border"></div>
+        </div>
+        <div class="program-card" data-aos="zoom-in" data-aos-delay="420">
+          <div class="pc-icon"><i class="fas fa-people-group"></i></div>
+          <h3>Group Classes</h3>
+          <p>Energetic group sessions that build community and push your limits together.</p>
+          <div class="pc-cta"><a href="https://wa.me/918608111181" target="_blank">Enquire <i class="fas fa-arrow-right"></i></a></div>
+          <div class="pc-border"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ANIMATED STATS
+  ============================================================ -->
+  <section class="section stats-section" id="stats">
+    <div class="stats-bg"></div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="stat-icon"><i class="fas fa-star"></i></div>
+          <div class="stat-num"><span class="count-up" data-target="117">0</span>+</div>
+          <div class="stat-label">Customer Reviews</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-num"><span class="count-up" data-target="1000">0</span>+</div>
+          <div class="stat-label">Members Trained</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <div class="stat-num"><span class="count-up" data-target="20">0</span>+</div>
+          <div class="stat-label">Fitness Programs</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-icon"><i class="fas fa-medal"></i></div>
+          <div class="stat-num"><span class="count-up" data-target="4" data-decimal="1">0</span>★</div>
+          <div class="stat-label">Customer Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRAINERS
+  ============================================================ -->
+  <section id="trainers" class="section trainers-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">MEET THE TEAM</span>
+        <h2 class="section-title">EXPERT<br /><span class="accent-text">TRAINERS</span></h2>
+        <p class="section-sub">Certified professionals committed to your transformation journey.</p>
+      </div>
+
+      <div class="trainers-grid">
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="trainer-avatar">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div class="trainer-ring"></div>
+          </div>
+          <div class="trainer-info">
+            <h3>Rajan Kumar</h3>
+            <span class="trainer-role">Head Strength Coach</span>
+            <div class="trainer-exp"><i class="fas fa-award"></i> 8+ Years Experience</div>
+            <p class="trainer-spec">Specialises in powerlifting, hypertrophy, and athletic conditioning.</p>
+            <div class="trainer-social">
+              <a href="https://wa.me/918608111181" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="#contact"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card featured-trainer" data-aos="fade-up" data-aos-delay="120">
+          <div class="trainer-badge">HEAD TRAINER</div>
+          <div class="trainer-avatar">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div class="trainer-ring"></div>
+          </div>
+          <div class="trainer-info">
+            <h3>Priya Sharma</h3>
+            <span class="trainer-role">Certified Fitness Coach</span>
+            <div class="trainer-exp"><i class="fas fa-award"></i> 6+ Years Experience</div>
+            <p class="trainer-spec">Expert in HIIT, weight loss transformation, and women's fitness.</p>
+            <div class="trainer-social">
+              <a href="https://wa.me/918608111181" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="#contact"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="trainer-avatar">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div class="trainer-ring"></div>
+          </div>
+          <div class="trainer-info">
+            <h3>Arjun Reddy</h3>
+            <span class="trainer-role">Functional Fitness Specialist</span>
+            <div class="trainer-exp"><i class="fas fa-award"></i> 5+ Years Experience</div>
+            <p class="trainer-spec">Expert in functional movement, mobility, and sports performance.</p>
+            <div class="trainer-social">
+              <a href="https://wa.me/918608111181" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="#contact"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRANSFORMATIONS
+  ============================================================ -->
+  <section class="section transformations-section" id="transformations">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">SUCCESS STORIES</span>
+        <h2 class="section-title">REAL<br /><span class="accent-text">TRANSFORMATIONS</span></h2>
+        <p class="section-sub">Our members' results speak louder than any promise we could make.</p>
+      </div>
+
+      <div class="transformations-grid">
+        <div class="transform-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="transform-visual">
+            <div class="transform-before">
+              <div class="transform-avatar-before"><i class="fas fa-user"></i></div>
+              <span class="transform-label before-label">BEFORE</span>
+            </div>
+            <div class="transform-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="transform-after">
+              <div class="transform-avatar-after"><i class="fas fa-person"></i></div>
+              <span class="transform-label after-label">AFTER</span>
+            </div>
+          </div>
+          <div class="transform-info">
+            <h4>Vikram S.</h4>
+            <div class="transform-result"><span>-18 KG</span> in 4 Months</div>
+            <p>"The trainers at Fitness Essentials completely changed my lifestyle. Best gym in Chennai!"</p>
+            <div class="transform-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="transform-card featured-transform" data-aos="fade-up" data-aos-delay="120">
+          <div class="transform-visual">
+            <div class="transform-before">
+              <div class="transform-avatar-before"><i class="fas fa-user"></i></div>
+              <span class="transform-label before-label">BEFORE</span>
+            </div>
+            <div class="transform-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="transform-after">
+              <div class="transform-avatar-after"><i class="fas fa-person"></i></div>
+              <span class="transform-label after-label">AFTER</span>
+            </div>
+          </div>
+          <div class="transform-info">
+            <h4>Meena R.</h4>
+            <div class="transform-result"><span>+12 KG MUSCLE</span> in 6 Months</div>
+            <p>"I tried many gyms but nothing compares. The personalized attention here is unmatched."</p>
+            <div class="transform-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="transform-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="transform-visual">
+            <div class="transform-before">
+              <div class="transform-avatar-before"><i class="fas fa-user"></i></div>
+              <span class="transform-label before-label">BEFORE</span>
+            </div>
+            <div class="transform-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="transform-after">
+              <div class="transform-avatar-after"><i class="fas fa-person"></i></div>
+              <span class="transform-label after-label">AFTER</span>
+            </div>
+          </div>
+          <div class="transform-info">
+            <h4>Karthik M.</h4>
+            <div class="transform-result"><span>FULL BODY RECOMP</span> in 5 Months</div>
+            <p>"From beginner to competitive. Fitness Essentials gave me the tools and the mindset."</p>
+            <div class="transform-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="transform-cta" data-aos="fade-up">
+        <a href="https://wa.me/918608111181" target="_blank" class="btn-primary">
+          <span class="btn-bg"></span>
+          <span class="btn-text"><i class="fab fa-whatsapp"></i> START YOUR TRANSFORMATION</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MEMBERSHIP PLANS
+  ============================================================ -->
+  <section id="membership" class="section membership-section">
+    <div class="section-bg-grid"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">MEMBERSHIP PLANS</span>
+        <h2 class="section-title">INVEST IN<br /><span class="accent-text">YOURSELF</span></h2>
+        <p class="section-sub">Flexible plans to match your ambition and budget.</p>
+      </div>
+
+      <div class="membership-grid">
+        <!-- Basic -->
+        <div class="plan-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="plan-header">
+            <div class="plan-icon"><i class="fas fa-seedling"></i></div>
+            <span class="plan-name">BASIC</span>
+            <div class="plan-price">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">999</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Full Gym Access</li>
+            <li><i class="fas fa-check"></i> Cardio Equipment</li>
+            <li><i class="fas fa-check"></i> Locker Facility</li>
+            <li><i class="fas fa-check"></i> Group Classes (2/week)</li>
+            <li><i class="fas fa-times"></i> Personal Trainer</li>
+            <li><i class="fas fa-times"></i> Nutrition Guidance</li>
+            <li><i class="fas fa-times"></i> Body Analysis</li>
+          </ul>
+          <a href="https://wa.me/918608111181" target="_blank" class="plan-btn">GET STARTED</a>
+        </div>
+
+        <!-- Pro -->
+        <div class="plan-card plan-featured" data-aos="fade-up" data-aos-delay="120">
+          <div class="plan-popular-badge">MOST POPULAR</div>
+          <div class="plan-header">
+            <div class="plan-icon"><i class="fas fa-bolt"></i></div>
+            <span class="plan-name">PRO</span>
+            <div class="plan-price">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">1,799</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Full Gym Access</li>
+            <li><i class="fas fa-check"></i> All Equipment</li>
+            <li><i class="fas fa-check"></i> Locker + Shower</li>
+            <li><i class="fas fa-check"></i> Unlimited Group Classes</li>
+            <li><i class="fas fa-check"></i> 2 PT Sessions/month</li>
+            <li><i class="fas fa-check"></i> Nutrition Guidance</li>
+            <li><i class="fas fa-times"></i> Body Analysis</li>
+          </ul>
+          <a href="https://wa.me/918608111181" target="_blank" class="plan-btn plan-btn-featured">JOIN PRO</a>
+        </div>
+
+        <!-- Elite -->
+        <div class="plan-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="plan-header">
+            <div class="plan-icon"><i class="fas fa-crown"></i></div>
+            <span class="plan-name">ELITE</span>
+            <div class="plan-price">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">2,999</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Full Gym Access</li>
+            <li><i class="fas fa-check"></i> All Equipment</li>
+            <li><i class="fas fa-check"></i> Premium Locker</li>
+            <li><i class="fas fa-check"></i> Unlimited Classes</li>
+            <li><i class="fas fa-check"></i> 8 PT Sessions/month</li>
+            <li><i class="fas fa-check"></i> Full Nutrition Plan</li>
+            <li><i class="fas fa-check"></i> Monthly Body Analysis</li>
+          </ul>
+          <a href="https://wa.me/918608111181" target="_blank" class="plan-btn plan-btn-elite">GO ELITE</a>
+        </div>
+      </div>
+
+      <p class="plan-note" data-aos="fade-up">* All plans include a complimentary fitness assessment. Contact us for quarterly and annual discounts.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section id="reviews" class="section testimonials-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2 class="section-title">WHAT MEMBERS<br /><span class="accent-text">SAY</span></h2>
+        <div class="rating-overview" data-aos="fade-up">
+          <div class="ro-stars">★★★★★</div>
+          <div class="ro-score">4.9</div>
+          <div class="ro-label">Based on 117+ Google Reviews</div>
+        </div>
+      </div>
+
+      <div class="swiper testimonialsSwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+              <p>"Best gym experience I've ever had. The trainers are genuinely invested in your progress. The equipment is top-notch and the environment is super motivating. 100% recommend!"</p>
+              <div class="tc-footer">
+                <div class="tc-avatar"><i class="fas fa-user"></i></div>
+                <div class="tc-meta">
+                  <h4>Arun Balaji</h4>
+                  <div class="tc-stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+              <p>"Lost 15kg in 3 months with their weight loss program. The personalized diet plan combined with training sessions made all the difference. Life-changing!"</p>
+              <div class="tc-footer">
+                <div class="tc-avatar"><i class="fas fa-user"></i></div>
+                <div class="tc-meta">
+                  <h4>Divya Menon</h4>
+                  <div class="tc-stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+              <p>"The HIIT classes here are absolutely incredible. Great energy, amazing coaches, and real results. I've tried many gyms across Chennai — this is the best by far."</p>
+              <div class="tc-footer">
+                <div class="tc-avatar"><i class="fas fa-user"></i></div>
+                <div class="tc-meta">
+                  <h4>Suresh Natarajan</h4>
+                  <div class="tc-stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+              <p>"Joined for personal training and it was worth every rupee. My trainer Priya understood my limitations and pushed me beyond what I thought was possible."</p>
+              <div class="tc-footer">
+                <div class="tc-avatar"><i class="fas fa-user"></i></div>
+                <div class="tc-meta">
+                  <h4>Kavitha Rajan</h4>
+                  <div class="tc-stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+              <p>"Very professional setup. Clean, modern, and well-equipped. The group classes are super fun and build a real sense of community. Highly recommended for T.Nagar locals!"</p>
+              <div class="tc-footer">
+                <div class="tc-avatar"><i class="fas fa-user"></i></div>
+                <div class="tc-meta">
+                  <h4>Mohammed Farhan</h4>
+                  <div class="tc-stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+              <p>"The flexible timings were the reason I joined and the results are the reason I'm still here. Built 8kg of lean muscle in 5 months. Incredible place and incredible people."</p>
+              <div class="tc-footer">
+                <div class="tc-avatar"><i class="fas fa-user"></i></div>
+                <div class="tc-meta">
+                  <h4>Praveen Chandrasekaran</h4>
+                  <div class="tc-stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY
+  ============================================================ -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">OUR FACILITY</span>
+        <h2 class="section-title">EXPERIENCE THE<br /><span class="accent-text">DIFFERENCE</span></h2>
+      </div>
+
+      <div class="gallery-grid" data-aos="fade-up">
+        <div class="gallery-item gi-large" onclick="openLightbox(0)">
+          <div class="gallery-img gi-interior">
+            <div class="gi-overlay"><i class="fas fa-expand"></i><span>Gym Floor</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(1)">
+          <div class="gallery-img gi-weights">
+            <div class="gi-overlay"><i class="fas fa-expand"></i><span>Weight Section</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(2)">
+          <div class="gallery-img gi-cardio">
+            <div class="gi-overlay"><i class="fas fa-expand"></i><span>Cardio Zone</span></div>
+          </div>
+        </div>
+        <div class="gallery-item gi-tall" onclick="openLightbox(3)">
+          <div class="gallery-img gi-training">
+            <div class="gi-overlay"><i class="fas fa-expand"></i><span>Training Session</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(4)">
+          <div class="gallery-img gi-group">
+            <div class="gi-overlay"><i class="fas fa-expand"></i><span>Group Class</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(5)">
+          <div class="gallery-img gi-equipment">
+            <div class="gi-overlay"><i class="fas fa-expand"></i><span>Equipment</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-inner">
+          <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+          <div class="lightbox-content" id="lightboxContent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MAP & LOCATION
+  ============================================================ -->
+  <section class="section map-section" id="location">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">FIND US</span>
+        <h2 class="section-title">VISIT US AT<br /><span class="accent-text">T.NAGAR</span></h2>
+      </div>
+
+      <div class="map-wrapper" data-aos="fade-up">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.159063063584!2d80.22777!3d13.04145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e4b0e5e5c5%3A0x7d16f3f2e1f2c3a1!2sRamakrishna%20Street%2C%20T.%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Fitness Essentials Location">
+          </iframe>
+          <div class="map-marker-pin">
+            <div class="map-pin-dot"></div>
+            <div class="map-pin-ring"></div>
+          </div>
+        </div>
+        <div class="map-info-panel">
+          <h3>FITNESS ESSENTIALS</h3>
+          <p class="map-address"><i class="fas fa-map-marker-alt"></i> 7/40 Ramakrishna Street, T.Nagar, Chennai, Tamil Nadu</p>
+          <div class="map-hours">
+            <div class="mh-row"><span>Mon – Sat</span><span>5:00 AM – 10:00 PM</span></div>
+            <div class="mh-row"><span>Sunday</span><span>6:00 AM – 8:00 PM</span></div>
+          </div>
+          <div class="map-actions">
+            <a href="https://maps.google.com/?q=Ramakrishna+Street+T.Nagar+Chennai" target="_blank" class="map-btn map-btn-dir">
+              <i class="fas fa-map-marker-alt"></i> GET DIRECTIONS
+            </a>
+            <a href="tel:+918608111181" class="map-btn map-btn-call">
+              <i class="fas fa-phone"></i> CALL NOW
+            </a>
+            <a href="https://wa.me/918608111181" target="_blank" class="map-btn map-btn-wa">
+              <i class="fab fa-whatsapp"></i> WHATSAPP
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">CONTACT US</span>
+        <h2 class="section-title">LET'S GET<br /><span class="accent-text">STARTED</span></h2>
+        <p class="section-sub">Ready to transform? Book your free trial or drop us a message.</p>
+      </div>
+
+      <div class="contact-wrapper" data-aos="fade-up">
+        <div class="contact-info">
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="ci-text">
+              <h4>Address</h4>
+              <p>7/40 Ramakrishna Street,<br />T.Nagar, Chennai</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="ci-text">
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/918608111181" target="_blank">+91 86081 11181</a></p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div class="ci-text">
+              <h4>Working Hours</h4>
+              <p>Mon–Sat: 5AM–10PM<br />Sun: 6AM–8PM</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-star"></i></div>
+            <div class="ci-text">
+              <h4>Rating</h4>
+              <p>4.9★ · 117+ Google Reviews</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/918608111181" target="_blank" class="contact-wa-btn">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h3>Book Your <span class="accent-text">Free Trial</span></h3>
+          <div class="contact-form" id="contactForm">
+            <div class="form-field">
+              <input type="text" id="cfName" placeholder=" " />
+              <label for="cfName">Your Name</label>
+              <div class="ff-border"></div>
+            </div>
+            <div class="form-field">
+              <input type="tel" id="cfPhone" placeholder=" " />
+              <label for="cfPhone">Phone Number</label>
+              <div class="ff-border"></div>
+            </div>
+            <div class="form-field">
+              <select id="cfProgram">
+                <option value="">Select Program</option>
+                <option>Weight Loss</option>
+                <option>Muscle Building</option>
+                <option>Strength Training</option>
+                <option>HIIT Training</option>
+                <option>Personal Training</option>
+                <option>Group Classes</option>
+              </select>
+              <div class="ff-border"></div>
+            </div>
+            <div class="form-field">
+              <textarea id="cfMessage" placeholder=" " rows="3"></textarea>
+              <label for="cfMessage">Message (Optional)</label>
+              <div class="ff-border"></div>
+            </div>
+            <button type="button" class="contact-submit" onclick="submitForm()">
+              <span class="btn-bg"></span>
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> SEND MESSAGE</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="nav-logo-icon">
+              <div class="logo-db"><div class="ldb-bar"></div><div class="ldb-w ldb-l"></div><div class="ldb-w ldb-r"></div></div>
+            </div>
+            <div class="nav-logo-text">
+              <span class="nl-fitness">FITNESS</span>
+              <span class="nl-essentials">ESSENTIALS</span>
+            </div>
+          </div>
+          <p>Premium fitness experience in the heart of T.Nagar. Your transformation starts here.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/918608111181" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#programs">Weight Loss</a></li>
+            <li><a href="#programs">Muscle Building</a></li>
+            <li><a href="#programs">HIIT Training</a></li>
+            <li><a href="#programs">Personal Training</a></li>
+            <li><a href="#programs">Group Classes</a></li>
+            <li><a href="#programs">Cardio Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 7/40 Ramakrishna Street, T.Nagar</p>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/918608111181" target="_blank">+91 86081 11181</a></p>
+          <p><i class="fas fa-clock"></i> Mon–Sat 5AM–10PM</p>
+          <div class="footer-rating">
+            <span class="fr-stars">★★★★★</span>
+            <span>4.9 · 117+ Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Fitness Essentials T.Nagar. All rights reserved.</p>
+        <p class="footer-dev">Designed & Developed by <a href="https://freelance-asif.vercel.app" target="_blank">Mohammed Asif</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING ACTION BUTTONS
+  ============================================================ -->
+  <div class="fab-container">
+    <a href="https://wa.me/918608111181" target="_blank" class="fab fab-whatsapp" title="Chat with Fitness Essentials">
+      <i class="fab fa-whatsapp"></i>
+      <span class="fab-tooltip">Chat with Fitness Essentials</span>
+      <div class="fab-pulse"></div>
+    </a>
+    <a href="tel:+918608111181" class="fab fab-call" title="Call Now">
+      <i class="fas fa-phone"></i>
+      <span class="fab-tooltip">Call Now</span>
+    </a>
+    <a href="#contact" class="fab fab-trial" title="Book Free Trial">
+      <i class="fas fa-calendar-check"></i>
+      <span class="fab-tooltip">Book Free Trial</span>
+    </a>
+    <button class="fab fab-top" id="backToTop" title="Back to Top" onclick="scrollToTop()">
+      <i class="fas fa-chevron-up"></i>
+      <span class="fab-tooltip">Back to Top</span>
+    </button>
+  </div>
+
+  <!-- ============================================================
+       LIBRARIES
+  ============================================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
